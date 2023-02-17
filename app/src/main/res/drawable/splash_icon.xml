@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="250dp"
+        android:height="250dp"
+        android:drawable="@android:color/transparent"
+        android:gravity="center" />
+
+    <item
+        android:id="@+id/tintDrawableImg"
+        android:width="90dp"
+        android:gravity="center"
+        android:height="90dp">
+        <bitmap  android:src="@drawable/ic_phone"   />
+    </item>
+
+</layer-list>
