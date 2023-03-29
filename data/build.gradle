@@ -27,6 +27,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+    lintOptions {
+        lintConfig file('lint.xml')
+        checkAllWarnings true
+        warningsAsErrors true
+        abortOnError false
+    }
 }
 dependencies {
     implementation project(":domain")
