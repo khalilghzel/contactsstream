@@ -3,4 +3,7 @@
     <issue id="InvalidPackage">
         <ignore path="**/kotlinx-coroutines-core-*.jar"/>
     </issue>
+    <issue id="ParsingException">
+        <ignore path="**/XMLStreamException"/>
+    </issue>
 </lint>
