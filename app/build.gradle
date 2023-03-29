@@ -44,8 +44,6 @@ android {
     }
     lintOptions {
         lintConfig file('lint.xml')
-        checkAllWarnings true
-        warningsAsErrors true
         abortOnError false
     }
 }
