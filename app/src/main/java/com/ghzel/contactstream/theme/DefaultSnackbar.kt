@@ -17,32 +17,34 @@ fun DefaultSnackbar(
     SnackbarHost(
         hostState = snackbarHostState,
         snackbar = { data ->
-            if (!data.message.equals(""))
-            Snackbar(
-                modifier = Modifier.padding(16.dp),
-                content = {
-                    Text(
-                        text = data.message,
-                        style = MaterialTheme.typography.body2,
-                        color = Color.White
-                    )
-                },
-                action = {
-                    data.actionLabel?.let { actionLabel ->
-                        TextButton(
-                            onClick = {
-                                onDismiss()
+            if (!data.message.equals("")) {
+
+                Snackbar(
+                    modifier = Modifier.padding(16.dp),
+                    content = {
+                        Text(
+                            text = data.message,
+                            style = MaterialTheme.typography.body2,
+                            color = Color.White
+                        )
+                    },
+                    action = {
+                        data.actionLabel?.let { actionLabel ->
+                            TextButton(
+                                onClick = {
+                                    onDismiss()
+                                }
+                            ) {
+                                Text(
+                                    text = actionLabel,
+                                    style = MaterialTheme.typography.body2,
+                                    color = Color.White
+                                )
                             }
-                        ) {
-                            Text(
-                                text = actionLabel,
-                                style = MaterialTheme.typography.body2,
-                                color = Color.White
-                            )
                         }
                     }
-                }
-            )
+                )
+            }
         },
         modifier = modifier
     )
