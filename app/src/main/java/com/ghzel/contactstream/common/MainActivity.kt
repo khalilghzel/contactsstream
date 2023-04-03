@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
       installSplashScreen()
     }
 }
-
+// just a test for triggering the last colmmited files
 @Composable
 fun NavGraph(navController: NavHostController, start: String) {
 
