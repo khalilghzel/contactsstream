@@ -9,6 +9,7 @@ class ContactsApplication : Application() {
         super.onCreate()
         //initialisation du stethou pour consulter le contenu du base du données en utilisant chromium
         Stetho.initializeWithDefaults(this)
+// just a test for triggering the last colmmited files again
 
     }
 

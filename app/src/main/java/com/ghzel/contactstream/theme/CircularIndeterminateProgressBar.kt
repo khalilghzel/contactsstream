@@ -23,6 +23,7 @@ import com.ghzel.contactstream.R
 fun CircularIndeterminateProgressBar(isDisplayed: Boolean, modifier: Modifier) {
     if (isDisplayed) {
         val interactionSource = remember { MutableInteractionSource() }
+// just a test for triggering the last colmmited files again
 
         Box(modifier = Modifier
             .clickable(
