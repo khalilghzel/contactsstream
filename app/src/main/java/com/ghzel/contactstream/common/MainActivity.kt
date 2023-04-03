@@ -14,8 +14,15 @@ import com.ghzel.contactstream.routes.NAV_HOME
 import com.ghzel.contactstream.ui.home.HomeScreen
 import dagger.hilt.android.AndroidEntryPoint
 
+//documentation = 'hell i'm the documentation'
+
+
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         lifecycleScope.launchWhenStarted {
