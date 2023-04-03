@@ -32,6 +32,33 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "colors","shapes"
+    productFlavors {
+        red {
+            dimension "colors"
+            applicationIdSuffix ".red"
+        }
+        green {
+            dimension "colors"
+            applicationIdSuffix ".green"
+        }
+        blue {
+            dimension "colors"
+            applicationIdSuffix ".blue"
+        }
+        circle {
+            dimension "shapes"
+            applicationIdSuffix ".circle"
+        }
+        rectangle {
+            dimension "shapes"
+            applicationIdSuffix ".rectangle"
+        }
+        triangle {
+            dimension "shapes"
+            applicationIdSuffix ".triangle"
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
