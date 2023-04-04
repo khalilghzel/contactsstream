@@ -14,8 +14,8 @@ import com.ghzel.contactstream.routes.NAV_HOME
 import com.ghzel.contactstream.ui.home.HomeScreen
 import dagger.hilt.android.AndroidEntryPoint
 
-//START documentation = hello i'm the documentation
- //so am i END
+//START hello i'm the new documentation Test
+ //so am i but in an other line END
 
 
 
